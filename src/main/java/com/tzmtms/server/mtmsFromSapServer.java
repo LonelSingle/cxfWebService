@@ -12,5 +12,6 @@ import java.util.List;
  */
 @WebService
 public interface mtmsFromSapServer {
+    
     public Message getMtMsFromSAPs(@WebParam(name = "fwsMpBBipnSoaps") List<FwsMpBBipnSoap> fwsMpBBipnSoaps);
 }
