@@ -17,7 +17,17 @@ public class FwsMpBBipnSoap implements Serializable {
     private String userName;//领料人姓名 需要
     private String materialNum;//物料料号 需要
     private String sapCode;//sap批次 需要
+    private String materialUnit;//物料单位 需要
+
     public FwsMpBBipnSoap() {
+    }
+
+    public String getMaterialUnit() {
+        return materialUnit;
+    }
+
+    public void setMaterialUnit(String materialUnit) {
+        this.materialUnit = materialUnit;
     }
 
     public String getCode() {

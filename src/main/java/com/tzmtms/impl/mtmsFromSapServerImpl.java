@@ -21,6 +21,7 @@ public class mtmsFromSapServerImpl implements mtmsFromSapServer {
         Message message=new Message();
         LinkedHashMap paramMapeqp = new LinkedHashMap();
         paramMapeqp.put("fwsMpBBipnSoapList", JsonMapper.toJsonString(fwsMpBBipnSoapList));
+        //  http://192.168.99.130/MESProject/services/   http://localhost:8080/services/
         String result = WebServicesUtil.getResult("mtMsFromSAPWebservice", "saveMtMsFromSAP", paramMapeqp, "http://192.168.99.130/MESProject/services/");
         HashMap resultmap = (HashMap) JsonMapper.fromJsonString(result, HashMap.class);
         message = (Message)JsonMapper.fromJsonString(JsonMapper.toJsonString(resultmap.get("message")),Message.class);
