@@ -12,7 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 /**
- * Created by Administrator on 2019/7/17 0017.
+ * Created by Szh on 2019/7/17 0017.
  */
 @WebService
 public class mtmsFromSapServerImpl implements mtmsFromSapServer {
